@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.author        = "Sarah Rogue"
   spec.email         = "emo-girl@sarah-rogue.me"
   spec.summary       = "AsciiDoc Front Matter reader and Converter for Bridgetown"
+  spec.description   = "Integrates advanced AsciiDoc processing into Bridgetown projects."
   spec.homepage      = "https://github.com/SarahRogue81/asciidoc_converter"
   spec.license       = "MIT"
 
