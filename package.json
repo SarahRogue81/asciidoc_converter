@@ -1,6 +1,6 @@
 {
   "name": "asciidoc_converter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "frontend/javascript/index.js",
   "repository": {
     "type": "git",
