@@ -4,7 +4,7 @@ require_relative "lib/asciidoc_converter/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "asciidoc_converter"
-  spec.version       = AsciidocConverter::VERSION
+  spec.version       = AsciiDocConverter::VERSION
   spec.author        = "Sarah Rogue"
   spec.email         = "emo-girl@sarah-rogue.me"
   spec.summary       = "AsciiDoc Front Matter reader and Converter"
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   # Uncomment this if you wish to supply a companion NPM package and/or command features:
   # spec.metadata = {
-  #   "npm_add" => "asciidoc_converter@#{AsciidocConverter::VERSION}",
+  #   "npm_add" => "asciidoc_converter@#{AsciiDocConverter::VERSION}",
   #   "bridgetown_features" => "true"
   # }
 

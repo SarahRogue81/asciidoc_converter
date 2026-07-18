@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require "bridgetown"
-require "asciidoc_converter/builder"
+require "asciidoc_converter/asciidoc"
+require "asciidoc_front_matter_loader"
 
 # @param config [Bridgetown::Configuration::ConfigurationDSL]
 Bridgetown.initializer :asciidoc_converter do |config|
@@ -10,17 +11,20 @@ Bridgetown.initializer :asciidoc_converter do |config|
   # in its configuration
 
   # Add default configuration data:
-  config.asciidoc_converter ||= {}
-  config.asciidoc_converter.my_setting ||= 123
+  # config.asciidoc_converter ||= {}
+  # config.asciidoc_converter.my_setting ||= 123
 
   # Register your builder:
-  config.builder AsciidocConverter::Builder
+  # config.builder AsciiDocConverter::Builder
+  config.converter AsciiDocConverter::AsciiDoc
 
   # You can optionally supply a source manifest:
-  config.source_manifest(
-    origin: AsciidocConverter,
-    components: File.expand_path("../components", __dir__),
-    layouts: File.expand_path("../layouts", __dir__),
-    content: File.expand_path("../content", __dir__)
-  )
+  # config.source_manifest(
+  #   origin: AsciiDocConverter,
+  #   components: File.expand_path("../components", __dir__),
+  #   layouts: File.expand_path("../layouts", __dir__),
+  #   content: File.expand_path("../content", __dir__)
+  # )
+
+  AsciiDocFrontMatterLoader.register!
 end
