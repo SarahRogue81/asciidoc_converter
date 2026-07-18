@@ -8,20 +8,20 @@ a Bridgetown plugin to convert AsciiDoc files to HTML using asciidoctor. it also
 :author: me
 :description: awesome description
 
-this is my first post
+this is my awesome post
 ```
 
 note that the Front Matter doesn't have a blank line at the top - this is important and an AsciiDoc rule besides
 
 == Installation
 
-Run this command to add this plugin to your site's Gemfile:
+run this command to add this plugin to your site's Gemfile:
 
 ```shell
 bundle add asciidoc_converter
 ```
 
-Then add the initializer to your configuration in `config/initializers.rb`:
+then add the initializer to your configuration in `config/initializers.rb`:
 
 ```ruby
 init :asciidoc_converter
@@ -33,9 +33,9 @@ the plugin will convert AsciiDoc files to HTML during the build process
 
 == Contributing
 
-1. Fork it (https://github.com/SarahRogue/asciidoc_converter/fork)
-2. Clone the fork using `git clone` to your local development machine.
-3. Create your feature branch (`git checkout -b my-new-feature`)
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin my-new-feature`)
-6. Create a new Pull Request
+1. fork it (https://github.com/SarahRogue/asciidoc_converter/fork)
+2. clone the fork using `git clone` to your local development machine.
+3. create your feature branch (`git checkout -b my-new-feature`)
+4. commit your changes (`git commit -am 'Add some feature'`)
+5. push to the branch (`git push origin my-new-feature`)
+6. create a new Pull Request
