@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.3"
 
   spec.add_dependency "asciidoctor", ">= 2.0"
+  spec.add_dependency "bridgetown", ">= 2.2"
 end
