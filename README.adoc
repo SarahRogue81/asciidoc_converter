@@ -1,10 +1,17 @@
-= Sample plugin for Bridgetown
+= asciidoc_converter plugin for Bridgetown
 
-_NOTE: This isn't a real plugin! Copy this sample code and use it to create your own Ruby gem! https://www.bridgetownrb.com/docs/plugins[Help guide here…]_ 😃
+a Bridgetown plugin to convert AsciiDoc files to HTML using asciidoctor. it also loads Front Matter from the AsciiDoc file - so you can write:
 
-_You can run_ `bridgetown plugins new` _to easily set up a customized version of this starter repo._
+```adoc
+= My AsciiDoc Post
+:layout: post
+:author: me
+:description: awesome description
 
-A Bridgetown plugin to [fill in the blank]…
+this is my first post
+```
+
+note that the Front Matter doesn't have a blank line at the top - this is important and an AsciiDoc rule besides
 
 == Installation
 
@@ -20,26 +27,9 @@ Then add the initializer to your configuration in `config/initializers.rb`:
 init :asciidoc_converter
 ```
 
-Or if there's a `bridgetown.automation.rb` automation script, you can run that instead for guided setup:
-
-```shell
-bin/bridgetown apply https://github.com/SarahRogue81/asciidoc_converter
-```
-
 == Usage
 
-The plugin will…
-
-=== Optional configuration options
-
-The plugin will automatically use any of the following metadata variables if they are present in your site's `_data/site_metadata.yml` file.
-
-…
-
-== Testing
-
-* Run `bundle exec rake test` to run the test suite
-* Or run `script/cibuild` to validate with Rubocop and Minitest together.
+the plugin will convert AsciiDoc files to HTML during the build process
 
 == Contributing
 
@@ -49,19 +39,3 @@ The plugin will automatically use any of the following metadata variables if the
 4. Commit your changes (`git commit -am 'Add some feature'`)
 5. Push to the branch (`git push origin my-new-feature`)
 6. Create a new Pull Request
-
-'''
-
-== Releasing (you can delete this section in your own plugin repo)
-
-To release a new version of the plugin, simply bump up the version number in both `version.rb` and
-`package.json`, and then run `script/release`. This will require you to have a registered account
-with both the https://rubygems.org[RubyGems.org] and https://www.npmjs.com[NPM] registries.
-You can optionally remove the `package.json` and `frontend` folder if you don't need to package frontend
-assets for Webpack.
-
-If you run into any problems or need further guidance, please check out our https://www.bridgetownrb.com/docs/community[Bridgetown community resources]
-where friendly folks are standing by to help you build and release your plugin or theme.
-
-*NOTE:* make sure you add the `bridgetown-plugin` https://github.com/topics/bridgetown-plugin[topic] to your
-plugin's GitHub repo so the plugin or theme will show up on https://www.bridgetownrb.com/plugins[Bridgetown's official Plugin Directory]! (There may be a day or so delay before you see it appear.)
