@@ -5,10 +5,10 @@ require_relative "lib/asciidoc_converter/version"
 Gem::Specification.new do |spec|
   spec.name          = "asciidoc_converter"
   spec.version       = AsciidocConverter::VERSION
-  spec.author        = "Bridgetown Team"
-  spec.email         = "maintainers@bridgetownrb.com"
-  spec.summary       = "Sample code for creating new Bridgetown plugins"
-  spec.homepage      = "https://github.com/username/asciidoc_converter"
+  spec.author        = "Sarah Rogue"
+  spec.email         = "emo-girl@sarah-rogue.me"
+  spec.summary       = "AsciiDoc Front Matter reader and Converter"
+  spec.homepage      = "https://github.com/SarahRogue81/asciidoc_converter"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|script|spec|features|frontend)/!) }
@@ -20,11 +20,7 @@ Gem::Specification.new do |spec|
   #   "bridgetown_features" => "true"
   # }
 
-  spec.required_ruby_version = ">= 3.2"
+  spec.required_ruby_version = ">= 3.3"
 
-  spec.add_dependency "bridgetown", ">= 2.0"
-
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake", ">= 13.0"
-  spec.add_development_dependency "rubocop-bridgetown", "~> 0.3"
+  spec.add_dependency "asciidoctor", ">= 2.0"
 end

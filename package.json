@@ -4,10 +4,10 @@
   "main": "frontend/javascript/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/asciidoc_converter.git"
+    "url": "https://github.com/SarahRogue81/asciidoc_converter.git"
   },
-  "author": "Bridgetown Maintainers <maintainers@bridgetownrb.com>",
-  "homepage": "https://www.bridgetownrb.com",
+  "author": "Sarah Rogue <emo-girl@sarah-rogue.me>",
+  "homepage": "https://sarah-rogue.me",
   "license": "MIT",
   "private": false,
   "files": [
